@@ -1,13 +1,15 @@
 {
   "name": "spacex-launch-programs",
   "version": "1.0.0",
-  "description": "Developed a front-end application which would help users list and browse all launches by SpaceX program.",
+  "description": "A simple front-end application which help users list and browse all launches by SpaceX program.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack:client": "webpack --config webpack.client.js --watch",
     "webpack:server": "webpack --config webpack.server.js --watch",
     "webpack:start": "nodemon --watch build --exec node build/bundle.js",
-    "dev": "npm-run-all --parallel webpack:*"
+    "dev": "npm-run-all --parallel webpack:*",
+    "build": "webpack --config webpack.client.js && webpack --config webpack.server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/navz2016/spaceX-launch-programs#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -36,10 +39,14 @@
     "npm-run-all": "^4.1.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "webpack": "^5.6.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-node-externals": "^2.5.2"
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1"
   }
 }
