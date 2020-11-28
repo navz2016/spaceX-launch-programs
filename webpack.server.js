@@ -24,6 +24,14 @@ module.exports = {
                         }]
                     ]
                 }
+            },
+            {
+                test: /\.css$/i,
+                use: [
+                    "file-loader",
+                    "url-loader",
+                    "css-loader"
+                ]
             }
         ]
     },

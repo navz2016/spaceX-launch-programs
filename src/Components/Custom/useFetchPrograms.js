@@ -7,7 +7,7 @@ const ACTIONS = {
     ERROR: 'error'
 }
 
-const BASE_URL = 'https://api.spacexdata.com/v3/launches?limit=100';
+const BASE_URL = 'https://api.spacexdata.com/v3/launches';
 
 function reducer(state, action){
     switch(action.type) { 

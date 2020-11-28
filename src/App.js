@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router';
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 
-
 function App(){
     return(
         <Switch>

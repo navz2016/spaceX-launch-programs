@@ -1,0 +1,22 @@
+.filter-container{
+    background-color: #fff;
+    padding: 10px;
+}
+.filter-item{
+    text-align: center;
+}
+.filter-btn-grp-container{
+    grid-template-columns: repeat(2, calc(50% - 5px));
+}
+.filter-btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+.filter-btn.btn-active {
+    background-color: #666;
+    color: white;
+}

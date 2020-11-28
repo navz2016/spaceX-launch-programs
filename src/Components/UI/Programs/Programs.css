@@ -1,0 +1,18 @@
+.grid-item-program {
+    min-width: 250px;
+}
+.program-container{
+    background-color: #fff;
+    padding: 20px;
+}
+.img-container{
+    background-color: #eee;
+}
+.res-img-container{
+    width: 225px;
+    margin: auto;
+}
+.res-img-container img{
+    width: 100%;
+    height: auto;
+}
