@@ -11,11 +11,11 @@ const FilterContainer = props => {
     ];
 
     return(
-        <div className="filter-container">
-            <h4 className="mar-0">Filters</h4>
-            {FILTER_TYPES.map((type, index) => 
-                <FilterItem key={index} type={type} {...props} />
-            )}
+        <div  className="filter-container">
+            <h2 className="mar-0">Filters</h2>
+                {FILTER_TYPES.map((type, index) => 
+                    <FilterItem key={index} type={type} {...props} />
+                )}
         </div>
     )
 }

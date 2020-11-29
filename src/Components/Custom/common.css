@@ -5,6 +5,10 @@ body,html{
 }
 
 /* generic */
+.main-container{
+    max-width: 1440px;
+    margin: auto;
+}
 .text-center{
     text-align: center;
 }
@@ -13,6 +17,9 @@ body,html{
 }
 .mar-0{
     margin: 0;
+}
+.hidden{
+    display: none !important;
 }
 
 /* grid styling */
@@ -40,7 +47,7 @@ body,html{
 
 @media screen and (min-width: 701px) and (max-width: 1023px) {
     .grid-container-main{
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 35% 65%;
     }
     .grid-container-program {
         grid-template-columns: repeat(2, calc(50% - 5px));

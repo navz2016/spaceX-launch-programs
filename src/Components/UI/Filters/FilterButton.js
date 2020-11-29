@@ -5,7 +5,8 @@ const FilterButton = props  => {
 
     function applyFilter() {
         props.applyFilter({
-            [props.type.name] : props.content
+            'type': props.type.name,
+            [props.type.name]: props.content
         }); 
         props.setActiveItem(props.content);
     }
