@@ -13,5 +13,8 @@ ReactDOM.hydrate(
     document.querySelector('#root')
 );
 
-//required for offline capabilities and turning into pwa
+/* required for offline capabilities and turning into pwa
+* need to include logic to register install, cache url and clear cache on new render
+* complete if time permits */
+
 //serviceWorker.register();

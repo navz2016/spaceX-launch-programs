@@ -1,5 +1,4 @@
 import React from 'react';
-import HeadParams from './HeadParams';
 
 const Header = () => {
     const _styles = {
@@ -10,7 +9,6 @@ const Header = () => {
 
     return(
         <React.Fragment>
-            <HeadParams />
             <header style={_styles}>
                 <b>SpaceX Launch Programs</b>
             </header>

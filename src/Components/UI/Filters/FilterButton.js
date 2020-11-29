@@ -1,7 +1,7 @@
 import React from 'react';
 import './Filters.css';
 
-const FilterButton = props  => {
+const FilterButton = React.memo(props  => {
 
     function applyFilter() {
         props.applyFilter({
@@ -20,6 +20,6 @@ const FilterButton = props  => {
             {props.content}
         </button>
     )
-}
+})
 
 export default FilterButton;

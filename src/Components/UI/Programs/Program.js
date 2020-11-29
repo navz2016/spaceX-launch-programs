@@ -10,7 +10,6 @@ const Program = React.memo(props => {
                     <ProgramImg content={props.content}/>
                 </div>
                 <div className="program-details">
-                    {/* <ProgramInfo info={props.content}/> */}
                     <p className="launch-name">{props.content.mission_name}  #{props.content.flight_number}</p>
                     <ProgramInfo value={props.content.mission_id} label="Mission Ids" />
                     <ProgramInfo value={props.content.launch_year} label="Launch Year" />

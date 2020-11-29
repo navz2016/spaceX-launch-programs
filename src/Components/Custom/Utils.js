@@ -1,4 +1,3 @@
-
 export function getParam(location) {
     const searchParams = new URLSearchParams(location);
     return {
