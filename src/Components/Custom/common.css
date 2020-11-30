@@ -18,8 +18,28 @@ body,html{
 .mar-0{
     margin: 0;
 }
+.mar-top-40{
+    margin-top: 40px;
+}
 .hidden{
     display: none !important;
+}
+
+/* error scenarios*/
+.err-backdrop {
+    position: fixed;
+    background: rgb(255 255 255 / 0.85);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.err-backdrop ul li{
+    margin: 10px;
 }
 
 /* grid styling */

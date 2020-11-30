@@ -12,7 +12,7 @@ const FilterType = props => {
             return <FlagFilter {...props}/>
 
         default:
-            return null;
+            return <FlagFilter {...props}/>
     }
 }
 
