@@ -6,19 +6,19 @@
     padding: 20px;
 }
 .program-details p, .program-details ul{
-    margin-bottom: 0px;
+    margin: 7px 0px;
 }
 .img-container{
     background-color: #eee;
 }
 .res-img-container{
-    width: 150px;
-    height: 150px;
+    min-width: 150px;
     margin: auto;
 }
 .res-img-container img{
     width: 100%;
     height: auto;
+    min-width: 150px;
 }
 .launch-name {
     color: #474f98;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 1024px) {
     .grid-item-program {
-        height: 475px;
+        height: 480px;
     }
     .filter-item{
         padding: 0px;

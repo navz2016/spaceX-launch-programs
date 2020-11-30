@@ -34,6 +34,10 @@
 }
 .clear-filter:hover,
 .filter-btn:hover,
+.clear-filter:focus,
+.filter-btn:focus,
+.clear-filter:active,
+.filter-btn:active,
 .filter-btn.btn-active {
     background-color: #7cba01;
 }
