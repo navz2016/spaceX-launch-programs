@@ -32,7 +32,7 @@ const Home = props => {
     const applyFilter = values  => {
         setFilterSelected(prevState => ({
             ...prevState,
-            [values.type]:[values[values.type]]
+            [values.type]:values[values.type]
         }));
     }
 

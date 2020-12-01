@@ -30,7 +30,7 @@ export default function useFetchDetails(params){
 
     useEffect(()=>{
         dispatch({ type: ACTIONS.MAKE_REQUEST});
-
+        
         axios.get(BASE_URL, {
             params: {...params}
         }).then(res =>{
