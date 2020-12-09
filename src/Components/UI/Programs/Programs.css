@@ -1,6 +1,6 @@
 .grid-item-program {
-    height: 450px;
     background-color: #fff;
+    border-radius: 8px;
 }
 .program-container{
     padding: 20px;
@@ -13,8 +13,8 @@
 }
 .res-img-container{
     min-width: 150px;
+    min-height: 150px;
     margin: auto;
-    width: 150px;
 }
 .res-img-container img{
     width: 100%;
@@ -49,15 +49,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .grid-item-program {
-        height: 480px;
-    }
     .filter-item{
         padding: 0px;
     }
     .res-img-container{
         min-width: 150px;
+        min-height: 150px;
         margin: auto;
-        width: 100%;
     }
 }
